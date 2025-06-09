@@ -1,0 +1,9 @@
+.about img{
+    width: 200px;
+    height: 200px;
+    padding-left: 300px;
+}
+.about a{
+    text-decoration: none;
+    padding: 14px 20px;
+}

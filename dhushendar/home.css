@@ -1,0 +1,16 @@
+.navbar{
+    background-color: orange;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.navbar a{
+    float: right;
+    text-align: center;
+    padding: 14px 20px;
+    color: rgb(1, 53, 1);
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+h1{
+    float: left;
+}

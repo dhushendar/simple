@@ -1,0 +1,14 @@
+.product img{
+    width: 200px;
+    height: 300px;
+    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+.product img:hover{
+    transform: scale(0.9);
+}
+.node a{
+    text-decoration: none;
+    text-align: center;
+    padding-left: 300px;
+}

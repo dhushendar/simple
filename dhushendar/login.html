@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./login.css" rel="stylesheet">
+</head>
+<body>
+    <center>
+    <h1>Welcome to my website</h1>
+    <br>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati quae impedit eaque, aperiam quia consectetur itaque? Voluptatem est, optio consequuntur, ratione sunt architecto veritatis minus perspiciatis hic eum, modi quae amet. Laborum animi, voluptas vitae facilis asperiores quibusdam fugit explicabo dignissimos nostrum? Officia minima quis consequatur, ad a vel.</p>
+    <br>
+    <hr>
+    <div class="login">
+    <p>username :<input type="text" name="username" placeholder="Enter username" id="username" required></p>
+    <p>password :<input type="password" name="password" placeholder="Enter password" id="password"required></p>
+    <button class="first" id="login">Login</button>
+    <p>Don't have a account?<a href="#">sigin</a></p>
+    </div>
+    </center>
+    <style>
+        .first a{
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        var login = document.getElementById("login");
+        var username = document.getElementById("username");
+        var password = document.getElementById("password");
+
+        login.onclick = function(){
+
+        if (username.value === "admin"&& password.value === "1234"){
+            alert("login successfully");
+            window.location.href="home.html";
+        }
+        else{
+            alert("enter correct password");
+        }
+        }
+    </script>
+</body>
+</html>
