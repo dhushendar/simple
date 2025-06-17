@@ -1,0 +1,38 @@
+body{
+    background-color: #b79969;
+    font-family: Arial, sans-serif;
+    color: #363333;
+}
+.app{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 24px;
+}
+.note{
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.add-note{
+    height: 200px;
+    border: none;
+    outline: none;
+    background-color: #363333;
+    border-radius: 10px;
+    font-size: 64px; /* Reduced for better fit */
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.add-note:hover{
+    color: rgba(0, 0, 0, 0.2);
+}
