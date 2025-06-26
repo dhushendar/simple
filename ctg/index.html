@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Mouse Game</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #gameArea {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: lightgray;
+            border: 2px solid black;
+            margin: auto;
+        }
+        #mouse {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Catch the Mouse Game</h1>
+    <div id="gameArea">
+        <div id="mouse"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $("#mouse").css({ 
+                left: Math.random() * ($("#gameArea").width() - 40), 
+                top: Math.random() * ($("#gameArea").height() - 40)
+            });
+
+            $("#mouse").hover(function() {
+                $(this).css({ 
+                    left: Math.random() * ($("#gameArea").width() - 40), 
+                    top: Math.random() * ($("#gameArea").height() - 40)
+                });
+            });
+        });
+    </script>
+</body>
+</html>
